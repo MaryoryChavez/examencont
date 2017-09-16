@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="muestra"></div>
+    <div class="boton boton1"></div>
+    <div class="boton boton2"></div>
+    <div class="boton boton3"></div>
+    <button class="nuevo-boton">New Color</button>
+
+    <div class="paleta">
+        <div class="rgb-picker color-picker">
+            <div class="sliders">
+                <div class="red-slider short-slider">
+                    <input class="bar" type="range" id="rangeinput" value="250" max="255" onchange="setRgb()" oninput="setRgb()" />
+                </div>
+                <div class="green-slider short-slider">
+                    <input class="bar" type="range" id="rangeinput" value="50" max="255" onchange="setRgb()" oninput="setRgb()" />
+                </div>
+                <div class="blue-slider short-slider">
+                    <input class="bar" type="range" id="rangeinput" value="50" max="255" oninput="setRgb()" onchange="setRgb()" />
+                </div>
+            </div>
+            <div class="color-preview"></div>
+        </div>
+        <button class="new-color">Add color</button>     
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
